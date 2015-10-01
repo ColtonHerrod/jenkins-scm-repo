@@ -29,7 +29,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>ruby CBRE_Market_Builder_Deliverables/ruby_scripts/validate_templates_s3bucket.rb -b nonprod-market-builder-templates -p MarketBuilder</command>
+      <command>ruby ruby_scripts/template_to_s3_bucket.rb -b nonprod-market-builder-templates -f CBRE_Market_Builder_Deliverables/CBRE_Market_Builder/CBRE_Market_Builder/market-builder-platform -p MarketBuilder
+ruby CBRE_Market_Builder_Deliverables/ruby_scripts/validate_templates_s3bucket.rb -b nonprod-market-builder-templates -p MarketBuilder</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
